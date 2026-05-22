@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/netflix\ bg.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title{
+    color:#E50914;
+    font-weight: 800;
+    font-size: 38px;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+main{
+    text-align: center;
+     color: white;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-size:52px;
+}
+
+main h5{
+   margin-top: 0px;
+   margin-bottom: 10px;
+    font-size:24px;
+    color:#FEFD99;
+}
+main p{
+    margin-top: 0px;
+    font-size: 32px;
+    color: #4BB8FA;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 5px;
+}
+
+
+.container input{
+    
+    width:100%;
+    padding: 22px 16px 14px 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    border:  1px solid #8c8c8c;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+    width: 430px;
+}
+
+.input-group label{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: transform 0.3s ease,font-size 0.3s ease, color 0.3s ease;
+}
+
+.input-group input:focus ~ label, .input-group input:not(:placeholder-shown) ~ label{
+    transform: translateY(-130%);
+    font-size: 16px;
+    color: red;
+}
+
+.container input:focus{
+    border-color: rgb(57, 57, 250);
+}
+
+.password-box{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+}
+
+button{
+    margin-top:20px;
+    width: 430px;
+    padding: 15px;
+    font-size: 20px;
+    background-color:red;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    background-color: white;
+    color: red;
+}
+
+
+.success-container{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-card{
+    background: rgba(0,0,0,0.75);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+.success-icon{
+    color:#b3b3b3;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.success-card h1{
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.success-card p{
+    color: #b3b3b3;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.success-card button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.success-card button:hover{
+    background: #f6121d;
+    transform: scale(1.03);
+}
+
+
+
+.fail-container{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fail-card{
+    background: rgba(0,0,0,0.75);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+.fail-icon{
+    color:rgb(199, 195, 195);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.fail-card h1{
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.fail-card p{
+    color: #b3b3b3;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.fail-card button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fail-card button:hover{
+    background: #f6121d;
+    transform: scale(1.03);
+}
+
+button:disabled{
+   
+    color: #8c8c8c;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+        padding: 0 30px;
+    }
+
+    main h5 {
+        font-size: 22px;
+    }
+
+    main p {
+        font-size: 26px;
+    }
+
+    .input-group {
+        width: 380px;
+    }
+
+    button {
+        width: 380px;
+        font-size: 18px;
+    }
+
+    .success-card, .fail-card {
+        width: 360px;
+        padding: 35px;
+    }
+
+    .success-card h1, .fail-card h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   
+    .title {
+        font-size: 24px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    main h5 {
+        font-size: 16px;
+        padding: 0 10px;
+        text-wrap: wrap;
+    }
+
+    main p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .input-group {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .container input {
+        padding: 18px 14px 10px 12px;
+        font-size: 14px;
+    }
+
+    .input-group input:focus ~ label, 
+    .input-group input:not(:placeholder-shown) ~ label {
+        transform: translateY(-150%);
+        font-size: 12px;
+    }
+
+    button {
+        width: 80%;
+        max-width: 320px;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .success-card, .fail-card {
+        width: 50%;
+        padding: 20px 15px;
+    }
+
+    .success-card h1, .fail-card h1 {
+        font-size: 24px;
+    }
+
+    .success-card p, .fail-card p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
