@@ -24,7 +24,7 @@ function App() {
       password: pass,
     });
     logindetails.then((response) => {
-      if (response.data == true) {
+      if (response.data === true || response.data == "true") {
         navigate("/success");
       } else {
         navigate("/fail");

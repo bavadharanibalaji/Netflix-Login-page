@@ -22,7 +22,7 @@ function Fail() {
         </p>
 
         <button onClick={()=> navigate("/")}>
-          Back to Login
+          ← Back to Login
         </button>
 
       </div>
