@@ -1,4 +1,4 @@
-import "./App.css"
+  import "./App.css"
 import { FaCheckCircle } from "react-icons/fa"
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +21,7 @@ function Success() {
         </p>
 
         <button onClick={()=> navigate("/")}>
-          Back to Home Page
+          ← Back to Home Page
         </button>
 
       </div>
